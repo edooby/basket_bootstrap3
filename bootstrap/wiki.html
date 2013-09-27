@@ -4,17 +4,33 @@
     <title>Fan Site Basketball (Edooby)</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+	<!-- Documentation extras -->
+<link href="../css/docs.css" rel="stylesheet">
+<link href="../assets/css/pygments-manni.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="../../assets/js/html5shiv.js"></script>
       <script src="../../assets/js/respond.min.js"></script>
     <![endif]-->
+	
+	<script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-146052-10']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  $('body').scrollspy({ target: '#navbar-nav' })
+
+</script>
   </head>
   <body>
   
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
 	    <div class="container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -38,11 +54,11 @@
 	       
 		    </div>
 	     </div>
-    </div>  
+    </header>  
 	<div class="page-header">
 		<div class = "container">
 			<div class="row">
-				<div class="col-md-9 col-ld-9">
+				<div class="col-md-9 col-ld-9" role="main" data-spy="scroll">
 					<article> 
 						<div class="bs-docs-section">
 							<div class="page-header">
@@ -53,14 +69,24 @@
 							</div>
 						</div>
 					</article>
+					<article> 
+						<div class="bs-docs-section">
+							<div class="page-header">
+								<p class="lead" id="assist"> <br>Passe D&eacute;cisive (assist) :  </p>
+								<p class="text-justify">
+								</p>
+								<img src="./img/Dribble-Basketball.jpg">
+							</div>
+						</div>
+					</article>
 					<article>
 						<div class="bs-docs-section">
 							<div class="page-header">
 								<p class="lead" id="double_pas"> <br>Double-pas : </p>
 								<p class="text-justify">Au basket-ball, le double-pas d&eacute;signe une technique particuli&egrave;re de r&eacute;alisation de panier, effectu&eacute;e en pleine course, apr&egrave;s une s&eacute;rie de deux pas sans dribble (d'o&ugrave; le nom de cette technique) qui placent le joueur en position de sauter &agrave; proximit&eacute; du panier au moment de tirer. Il est souvent consid&eacute;r&eacute; comme le tir le plus facile du basket. 
-						Le double-pas est g&eacute;n&eacute;ralement effectu&eacute; &agrave; une seule main (le plus souvent, la m&ecirc;me main que le c&ocirc;t&eacute; du terrain par lequel le joueur arrive au panier), ce qui le diff&eacute;rencie du Tir en suspension ("jump shot"). L'autre main peut servir &agrave; prot&eacute;ger la balle d'un contre &eacute;ventuel. La balle peut aussi &ecirc;tre port&eacute;e &agrave; deux mains jusqu'au moment de tirer, pour r&eacute;duire les chances de se la faire intercepter.
+						Le double-pas est g&eacute;n&eacute;ralement effectu&eacute; &agrave; une seule main (le plus souvent, la m&ecirc;me main du c&ocirc;t&eacute; du terrain par lequel le joueur arrive au panier), ce qui le diff&eacute;rencie du Tir en suspension ("jump shot"). L'autre main peut servir &agrave; prot&eacute;ger la balle d'un contre &eacute;ventuel. La balle peut aussi &ecirc;tre port&eacute;e &agrave; deux mains jusqu'au moment de tirer, pour r&eacute;duire les chances de se la faire intercepter.
 Le double-pas peut &ecirc;tre r&eacute;alis&eacute; en faisant rebondir la balle contre le panneau (en anglais, "layup"), ou en l&acirc;chant directement la balle dans l'arceau ("laydown"). Pour &eacute;viter le contre, l'attaquant peut passer sous le panneau pour tirer de l'autre c&ocirc;t&eacute;. Le terme anglais est alors "lay-back".
-C'est un moyen relativement s&ucirc;r de marquer un panier, &agrave; condition de pouvoir s'approcher du panier et d'&eacute;viter les contres, les d&eacute;fenseurs les plus grands &eacute;tant la plupart du temps plac&eacute;s pr&grave;s de celui-ci. Un joueur qui poss&grave;de une taille et une d&eacute;tente suffisantes pourra toutefois pr&eacute;f&eacute;rer le dunk au double-pas.
+C'est un moyen relativement s&ucirc;r de marquer un panier, &agrave; condition de pouvoir s'approcher du panier et d'&eacute;viter les contres, les d&eacute;fenseurs les plus grands &eacute;tant la plupart du temps plac&eacute;s pr&egrave;s de celui-ci. Un joueur qui poss&egrave;de une taille et une d&eacute;tente suffisantes pourra toutefois pr&eacute;f&eacute;rer le dunk au double-pas.
 Il est le premier "shoot" enseign&eacute; dans les &eacute;coles de basketball &agrave; cause de sa facilit&eacute;, c'est le meilleur moyen de marquer des paniers en championnat minibasket.
 								</p>
 								<img src="./img/double-pas.jpg">
@@ -77,7 +103,7 @@ Il est le premier "shoot" enseign&eacute; dans les &eacute;coles de basketball &
 				
 					<article> 
 						<div class="bs-docs-section">
-							<p class="lead"> <br>Tir en suspension (jump shot) : </p>
+							<p class="lead" id="jump_shot"> <br>Tir en suspension (jump shot) : </p>
 							<p class="text-justify"> Au basket-ball, le tir en suspension est une tentative de tir, le plus souvent tent&eacute; &agrave; mi-distance ou lointain, pendant laquelle le joueur saute verticalement avec la balle. Pendant le tir, le tireur aligne son coude avec le panier, puis envoie la balle avec un arc de cercle vers le cercle. Ce tir est consid&eacute;r&eacute; comme la m&eacute;thode la plus efficace pour un tir en p&eacute;riph&eacute;rie, le saut devant rendre plus difficile la t&acirc;che du d&eacute;fenseur, emp&ecirc;cher le contre et donner de l'&eacute;lan &agrave; la balle. Aujourd'hui classique, il conna&icirc;t plusieurs variantes : turnaround jump shot, fadeaway</p>
 							<img src="./img/jump_shot.jpg" class="img-thumbnail" width="360" height="720">
 						</div>
@@ -91,26 +117,107 @@ Il est le premier "shoot" enseign&eacute; dans les &eacute;coles de basketball &
 					
 					<article> 
 						<p class="lead" id="dunk"> <br>Dunk : </p>
-					    <p class="text-justify"> Au basket-ball, le slam dunk ou smash, plus couramment appel&eacute; dunk, est une action de jeu (r&eacute;alis&eacute;e la premi&egrave;re fois par George Mikan) au basket-ball qui consiste &agrave; marquer en projetant le ballon dans l'arceau, &agrave; une ou deux mains. Le dunk est une des mani&egrave;res les plus spectaculaires de marquer un panier. </p>
-					    <img src="./img/dunk.jpg">
+					    <p class="text-justify"> Au basket-ball, le slam dunk ou smash, plus couramment appel&eacute; dunk, est une action de jeu (r&eacute;alis&eacute;e la premi&egrave;re fois par George Mikan) qui consiste &agrave; marquer en projetant le ballon dans l'arceau, &agrave; une ou deux mains. Le dunk est une des mani&egrave;res les plus spectaculaires de marquer un panier. Il existe plusieurs variantes de dunks. </p>
+						<img src="./img/dunk.jpg">
 						<!-- http://fr.wikipedia.org/wiki/Slam_dunk -->
+						<p class="lead" id="dunk_poster">Poster Dunk : </p>
+						<p class="text-justify">Il s'agit de n'importe quel dunk, sauf qu'on le fait juste au-dessus d'un adversaire. "Se faire post&eacute;riser" est tr&egrave;s humiliant.
+						</p>
+						<img src="./img/poster-dunk.jpg">
+						<!-- http://fr.wikipedia.org/wiki/Lexique_du_basket-ball -->
+						<p class="lead" id="dunk_reverse"> <br>Reverse : </p>
+						<p class="text-justify"> Il s'agit d'un dunk &agrave; l'envers, dos au panier. 
+						</p>
+						<img src="./img/reverse_dunk.jpg" class="img-thumbnail" width="480" height="720">
+						<!-- http://fr.wikipedia.org/wiki/Slam_dunk -->
+						<p class="lead" id="dunk_free"> <br>Free  throw line Dunk : </p>
+						<p class="text-justify">Il s'agit d'un dunk en longueur.
+						</p>
+						<img src="./img/free_throw_line_dunk.jpg">
+						<!-- http://fr.wikipedia.org/wiki/Slam_dunk -->
+						<p class="lead" id="dunk_windmill"> <br>Windmill : </p>
+						<p class="text-justify">Cela consiste &agrave; faire un cercle avec son bras avant de dunker, &agrave; l'instar d'une aile de moulin &agrave; vent. Combin&eacute; avec un 360&deg;, par exemple, ce mouvement devient tr&egrave;s spectaculaire
+						</p>
+						<img src="./img/windmill_dunk.jpg">
+						<!-- http://fr.wikipedia.org/wiki/Slam_dunk -->
+						<p class="lead" id="dunk_throw"> <br>Throw it Down : </p>
+						<p class="text-justify">Il s'agit en fait d'une phrase cr&eacute,&eacute;e par Bill Walton pour expliquer un dunk d'une force incroyable sur un adversaire.
+						</p>
+						<img src="./img/throw_it_down.jpg">
+						<!-- http://fr.wikipedia.org/wiki/Slam_dunk -->
+						<p class="lead" id="dunk_thunder"> <br>Thunder dunk : </p>
+						<p class="text-justify">Il s'agit d'un dunk apr&egrave;s une envol&eacute;e longue dur&eacute;e suivi d'un geste d'une force rare, tel le tonnerre.
+						</p>
+						<img src="./img/thunder_dunk.jpg">
+						<!-- http://fr.wikipedia.org/wiki/Slam_dunk -->
+						<p class="lead" id="dunk_tomahawk"> <br>Tomahawk : </p>
+						<p class="text-justify">il s'agit d'un dunk f&eacute;roce &agrave; une main ou deux mains qui se rabat sur le panier tel une hache, Dominique Wilkins excellait dans ce domaine.
+						</p>
+						<img src="./img/tomahawk_dunk.jpg">
+						<!-- http://fr.wikipedia.org/wiki/Slam_dunk -->
+						<p class="lead" id="dunk_rider"> <br>Rider : </p>
+						<p class="text-justify"> Ce geste consiste &agrave; sauter, passer le ballon entre ses jambes et dunker, un des dunks les plus impressionnants et les plus appr&eacute;ci&eacute;s.
+						</p>
+						<img src="./img/rider_dunk.jpg">
+						<!-- http://fr.wikipedia.org/wiki/Slam_dunk -->
+						<p class="lead" id="dunk_180"> <br>180&deg; : </p>
+						<p class="text-justify">Il s'agit d'effectuer un demi-tour en l'air juste avant le dunk.
+						</p>
+						<img src="./img/180_dunk.jpg" class="img-thumbnail" width="360" height="720">
+						<!-- http://fr.wikipedia.org/wiki/Slam_dunk -->
+						<p class="lead" id="dunk_360"> <br>360&deg; : </p>
+						<p class="text-justify">Il s'agit d'effectuer un tour complet sur soi-m&ecirc;me en l'air juste avant le dunk. C'est un geste tr&egrave;s spectaculaire.
+						</p>
+						<img src="./img/360_dunk.jpg">
+						<!-- http://fr.wikipedia.org/wiki/Slam_dunk -->
+						<p class="lead" id="dunk_720"> <br>720&deg; : </p>
+						<p class="text-justify">Il s'agit d'effectuer deux tours sur soi-m&ecirc;me avant de dunker. Impossible &agrave; r&eacute;aliser sans une d&eacute;tente impressionnante.
+						</p>
+						<img src="./img/720_dunk.jpg">
+						<!-- http://fr.wikipedia.org/wiki/Slam_dunk -->
+						<p class="lead" id="dunk_superman"> <br>Super-Man Dunk : </p>
+						<p class="text-justify">Dunk effectu&eacute; par Dwight Howard lors du All Star Game qui consiste &agrave; lancer le ballon dans le cercle lorsqu'on est au dessus.
+						</p>
+					    <img src="./img/superman_dunk.jpg" width="720" height="480">
+						<!-- http://fr.wikipedia.org/wiki/Slam_dunk -->
+						
 					</article>
 				
-				</div> <!-- Div md8 -->
+				</div> <!-- Div md9 -->
 			
 				<div class="col-md-3 col-ld-3">
 				    <br><br>
 					<div class="bs-sidebar hidden-print affix" role="complementary">
 						<ul class="nav bs-sidenav">
-							<li class="active"><a href="#dribble">Dribble</a></li>
-							<li class="active"><a href="#double_pas">Double Pas</a></li>
+							<li><a href="#dribble">Dribble</a></li>
+							<li><a href="#double_pas">Double Pas</a></li>
 							<li class="active"><a href="#layup">Layup</a>
+							<li class="active">
+								<a href="#jump_shot">Jump shot</a>
 								<ul class="nav">
-									<li class="active"> <a href="#layup_fadeaway">fadeaway</a></li>
-									<li> <a href="#layup_turnaround_jump_shot">turnaround jump shot</a></li>
+									<li class="">
+										<a href="#layup_fadeaway">&nbsp;&nbsp;<span class="glyphicon glyphicon-cloud"></span>&nbsp;&nbsp;Fadeaway</a>
+									</li>
+									<li>
+										<a href="#layup_turnaround_jump_shot">&nbsp;&nbsp;<span class="glyphicon glyphicon-cloud"></span>&nbsp;&nbsp;Turnaround jump shot</a>
+									</li>
 								</ul>
 							</li>
 							<li><a href="#dunk">Dunk</a>
+								<ul class="nav">
+									<li><a href="#dunk_poster">&nbsp;&nbsp;<span class="glyphicon glyphicon-cloud"></span>&nbsp;&nbsp;StarPoster Dunk</a></li>
+									<li><a href="#dunk_reverse">&nbsp;&nbsp;<span class="glyphicon glyphicon-cloud"></span>&nbsp;&nbsp;Reverse</a></li>
+									<li><a href="#dunk_free">&nbsp;&nbsp;<span class="glyphicon glyphicon-cloud"></span>&nbsp;&nbsp;Free throw line Dunk</a></li>
+									<li><a href="#dunk_windmill">&nbsp;&nbsp;<span class="glyphicon glyphicon-cloud"></span>&nbsp;&nbsp;Windmill</a></li>
+									<li><a href="#dunk_throw">&nbsp;&nbsp;<span class="glyphicon glyphicon-cloud"></span>&nbsp;&nbsp;Throw it Down</a></li>
+									<li><a href="#dunk_thunder">&nbsp;&nbsp;<span class="glyphicon glyphicon-cloud"></span>&nbsp;&nbsp;Thunder</a></li>
+									<li><a href="#dunk_tomahawk">&nbsp;&nbsp;<span class="glyphicon glyphicon-cloud"></span>&nbsp;&nbsp;Tomahawk</a></li>
+									<li><a href="#dunk_rider">&nbsp;&nbsp;<span class="glyphicon glyphicon-cloud"></span>&nbsp;&nbsp;Rider</a></li>
+									<li><a href="#dunk_180">&nbsp;&nbsp;<span class="glyphicon glyphicon-cloud"></span>&nbsp;&nbsp;180&deg;</a></li>
+									<li><a href="#dunk_360">&nbsp;&nbsp;<span class="glyphicon glyphicon-cloud"></span>&nbsp;&nbsp;360&deg;</a></li>
+									<li><a href="#dunk_720">&nbsp;&nbsp;<span class="glyphicon glyphicon-cloud"></span>&nbsp;&nbsp;720&deg;</a></li>
+									<li><a href="#dunk_superman">&nbsp;&nbsp;<span class="glyphicon glyphicon-cloud"></span>&nbsp;&nbsp;Super-man dunk</a></li>
+								</ul>
 							</li>
 						</ul>
 					</div>
